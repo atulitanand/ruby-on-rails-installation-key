@@ -1,0 +1,41 @@
+atulitanand@LAPTOP-M61P6L8R:~$ git config --global color.ui true
+atulitanand@LAPTOP-M61P6L8R:~$ git config --global user.name "YOUR NAME"
+atulitanand@LAPTOP-M61P6L8R:~$ git config --global user.name "ATULIT ANAND"
+atulitanand@LAPTOP-M61P6L8R:~$ git config --global user.name "ATULIT ANAND"
+atulitanand@LAPTOP-M61P6L8R:~$ git config --global user.email "atulitraj.anand@gmail.com"
+atulitanand@LAPTOP-M61P6L8R:~$ ssh-keygen -t rsa -b 4096 -C "atulitraj.anand@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/atulitanand/.ssh/id_rsa):
+Created directory '/home/atulitanand/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/atulitanand/.ssh/id_rsa
+Your public key has been saved in /home/atulitanand/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:M3BudZu0Oc3iN5UfI5/r5PELlpnuEk88Hg++kbLVFuw atulitraj.anand@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|                 |
+|                 |
+|      . . . o    |
+|       + . o B. .|
+|        S   O.o*.|
+|       . o o OX.*|
+|           .BXBE.|
+|           .*=*o+|
+|           .o+o=o|
++----[SHA256]-----+
+atulitanand@LAPTOP-M61P6L8R:~$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCzQMimZjD+ruPvq5K9pgIToQ3MUL2Sw2INOOeN42titXlYIWd8vE+4fc8JNHDmfHjClmIznyUsRyNFGUX0dOAHCzeudFtnC5nwyPJBkqAp/F8Uk7BCiny20T28Nspal/F+z6kcBjgk8T+eJ19+fPCReAIeM9dQdQF+zd765fmuRkW0kW8HYnm8YQUNqqm5wd35MIHwYONtmH7h4yHsjHaaAAQvUqsNWpwfPce4nhe10pLgR2rBu6ajJ4p2Z6Toxoe68FvKRpWkOINslmXhbM4dhRj7bw9BKsBgJxx+uTniBFWU/3DlTIQJeKBLSEzOjJ1HVdnyosQlwgUjSaxRFRgMZ+8E8CgZFO147Pi/LyHoEmEe42N1ICzcz96DDs9xt0eMLjFLHmBWYizk3NYy6ELWdIf2EguRtrFBdd35yFCFRPy2eLfbdzhFlJfJTA1IFJqc07Qg2sMJJzfL1Hm+Ev1D2HC4uKQZ85JYG/cSDqbt3peAFPduGYCTvB5olKv1d0tpRtAsto3hm5nQbVNnt2C+N9lQ0/b1vFaMVWVWY2Bl/Ab3hC9iN6v1ko5R5SbxEPfeg9nobH0O/rG+6D+qvoFcFTXRm7n1Y/5Jcmxze839XfIL7PBBybpMohABZGzBZAJp8lS3U5Q6uBsGnSTuVQ3iiNXARvAq/5on6RNoKrbHsQ== atulitraj.anand@gmail.com
+atulitanand@LAPTOP-M61P6L8R:~$ ssh -T git@github.com
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+atulitanand@LAPTOP-M61P6L8R:~$ ssh -T git@github.com
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,13.234.176.102' (RSA) to the list of known hosts.
+Hi icecoffee-dev! You've successfully authenticated, but GitHub does not provide shell access.
+atulitanand@LAPTOP-M61P6L8R:~$
